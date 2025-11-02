@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard — Typing Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">Typing Speed Test</a>
+        <nav>
+          <a class="nav-link" href="index.html">Take Test</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap dashboard-grid">
+      <section class="card dashboard-stats">
+        <h2>Overview</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">—</div>
+            <div class="stat-label">Best WPM</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">—</div>
+            <div class="stat-label">Best Accuracy</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">—</div>
+            <div class="stat-label">Levels Completed</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card achievements-card">
+        <h2>Achievements</h2>
+        <ul id="achievements" class="achievements-list">
+          <!-- Achievements will be dynamically populated -->
+        </ul>
+        <div class="mt">
+          <button onclick="window.location.href='index.html';" class="btn primary">Start Typing Test</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">View and track your progress here.</div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
